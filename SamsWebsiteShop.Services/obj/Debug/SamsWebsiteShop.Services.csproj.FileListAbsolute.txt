@@ -1,0 +1,4 @@
+C:\Development\Samswebsiteshop\SamsWebsiteShop\Sams-Website-Shop\SamsWebsiteShop.Services\bin\Debug\SamsWebsiteShop.Services.dll
+C:\Development\Samswebsiteshop\SamsWebsiteShop\Sams-Website-Shop\SamsWebsiteShop.Services\bin\Debug\SamsWebsiteShop.Services.pdb
+C:\Development\Samswebsiteshop\SamsWebsiteShop\Sams-Website-Shop\SamsWebsiteShop.Services\obj\Debug\SamsWebsiteShop.Services.dll
+C:\Development\Samswebsiteshop\SamsWebsiteShop\Sams-Website-Shop\SamsWebsiteShop.Services\obj\Debug\SamsWebsiteShop.Services.pdb

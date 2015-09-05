@@ -1,0 +1,59 @@
+﻿@model SamsWebsiteShop.Services.PayPalService.Model.PayPalTransactionModel
+@{
+    ViewBag.Title = "Thank you for your purchase";
+    ViewBag.SubHeading = "Thank you for your purchase";
+    ViewBag.SubHeadingDescription = " please print this page for your record of payment";
+
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 col-sm-8">
+            <!-- Shopping items content -->
+            <div class="shopping-content">
+                <!-- Block Title -->
+                <h4><i class="fa fa-clock-o color"></i> Your Order Details&nbsp;&nbsp;<small>Order / Invoice  Ref: @Model.TransactionId</small></h4>
+                <hr>
+                <p>
+                    <strong>Order Date: @Model.TransactionDateTime</strong><br />
+                    @Model.FirstName&nbsp;@Model.LastName<br />
+                    @Model.AddressStreet<br />
+                    @Model.AddressCity<br />
+                    @Model.AddressCounty<br />
+                    @Model.AddressPostCode<br />
+                    @Model.AddressCountry<br /><br />
+                    @Model.EmailAddress
+                    <br/><br/>
+                </p>
+                <div class="shopping-ohistory">
+                    <!-- Recent Purchaes Table -->
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <!-- Table Header -->
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Product Code</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <!-- Table Body -->
+                            <tbody>
+                                <tr>
+                                    <td>@Model.Item</td>
+                                    <td>@Model.ItemUniqueId</td>
+                                    <td>£@Model.InvoiceTotal</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <strong>INVOICE TOTAL: £@Model.InvoiceTotal</strong><br/>
+                            PayPal payment recieved in full
+                        </p>
+                        <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
